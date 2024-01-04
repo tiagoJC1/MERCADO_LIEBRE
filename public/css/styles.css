@@ -51,6 +51,21 @@
     margin-right: 48%;
     margin-top: 20px;
 }
+.main {
+    font-size: 12px;
+}
+
+.main-titulos {
+    font-size: 24px;
+}
+
+.main-precio {
+    font-size: 18px;
+}
+
+.main-texto {
+    font-size: 16px;
+}
 
 .footer {
     text-align: center;
