@@ -1,0 +1,81 @@
+
+* {
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;
+}
+
+.header {
+    background-color:#EAC926;
+    padding-bottom: 4%;
+}
+
+
+.titulo {
+    height: 80px;
+    padding: 30px 30px 10px 15px ; 
+    margin: 50px;
+}
+
+
+.header-busqueda {
+    background-color: white;
+    width: 500px;
+    border: solid #666 3px ;
+    text-align: center ;
+    margin-left: 3%; 
+    font-size: 3ex;
+}
+.header-busqueda-icon {
+    margin-left: 3%;
+    background-color: white;
+    width: 1.69%;
+    border: solid #666 3px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.header-anuncio {
+    padding-bottom: 30px;
+    padding-top: 30px ;
+    text-align: center;
+    font-size: 3ex;
+}
+
+.header-icon-barra {
+    background-color: #1259c3;
+    color: white;
+    text-align: center ;
+    font-size: 2em;
+    padding: 10px 10px 10px 10px;
+    margin-left: 48%;
+    margin-right: 48%;
+    margin-top: 20px;
+}
+.main {
+    font-size: 12px;
+}
+
+.main-titulos {
+    font-size: 24px;
+}
+
+.main-precio {
+    font-size: 18px;
+}
+
+.main-texto {
+    font-size: 16px;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-icon{
+    font-size: 2em;
+    color: #1259c3;
+}
+
+.footer-text{
+    margin-bottom: 6%;
+}
