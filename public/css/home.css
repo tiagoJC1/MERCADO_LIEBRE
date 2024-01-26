@@ -1,6 +1,9 @@
 * {
   font-family: "Roboto", sans-serif;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
@@ -12,13 +15,12 @@
 }
 
 header .titulo {
-  height: 80px;
+  height: 115px;
   padding: 30px 30px 10px 15px;
   margin: 50px;
 }
 
-header .header-para-buscar {
-}
+header .header-para-buscar {}
 
 header .header-barrra-busqueda {
   background-color: white;
@@ -27,12 +29,13 @@ header .header-barrra-busqueda {
   text-align: center;
   margin-left: 14px;
   font-size: 3ex;
+  margin-bottom: 20px;
 }
 header .header-busqueda-icon {
   /* margin-left: 3%; */
   background-color: white;
   border: solid #666 3px;
-  font-size: 20px;
+  font-size: 3ex;
   text-align: center;
 }
 
@@ -40,13 +43,12 @@ header .header-anuncio {
   padding-bottom: 30px;
   padding-top: 30px;
   text-align: center;
-  font-size: 3ex;
+  /* font-size: 3ex; */
 }
 
 header .scroll {
 }
-header .redirecciones-1 {
-}
+header .redirecciones-1 {display: flex;flex-direction: row;}
 header .redirecciones-2 {
 }
 
@@ -74,11 +76,24 @@ main .main-title {
   font-size: 24px;
 }
 main .products {
+ 
 }
 
 main .article {
 }
 main .emote-camion {
+  display: block;
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  /* position: absolute; */
+  right: 20px;
+  top: -15px;
+
 }
 
 main.main-precio {
@@ -171,21 +186,21 @@ main .main-texto {
   }
   main .emote-camion {
     color: #3fb349;
-    margin-left: 32px;
-    border-radius: 50%;
+    margin-left: 19px;
+    border-radius: 100%;
     width: 22px;
     border: solid 1.6px;
-    padding: 4px 13px 13px 4px;
+    padding: 4px 33px 13px 3px;
   }
 
   main .main-precio {
-    margin-left: 5%;
+    margin-left: 19px;
+    padding-top: 13px;
   }
 
   main .main-offer {
     color: #3fb349;
-    margin-top: -16px;
-    margin-left: 5%;
+    margin-left: 19px;
     font-size: 72%;
   }
 
@@ -215,21 +230,20 @@ main .main-texto {
   header .header-busqueda-icon {
   }
   header .header-anuncio {
-  box-sizing: border-box;
-  display: block;
-  font-size: 20px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 20px;
   }
   header .redirecciones-1 {
-  margin: 0px;
+    margin: 0px;
   }
   header .redirecciones-2 {
-  margin: 0px;
+    margin: 0px;
   }
 
   header .header-icon-barra {
     width: 0px;
     padding: 0px;
-    /* height: 0px; */
     margin: auto;
     font-size: 0px;
   }
@@ -256,23 +270,22 @@ main .main-texto {
     display: block;
     padding-top: 10px;
   }
-  main .emote-camion{
+  main .emote-camion {
     color: #3fb349;
-    margin-left: 32px;
+    margin-left: 42px;
     border-radius: 50%;
     width: 22px;
     border: solid 1.6px;
-    padding: 4px 13px 13px 4px;
+    padding: 4px 32px 13px 4px;
   }
 
   main .main-precio {
-    margin-left: 5%;
+    margin-left: 42px;
   }
 
   main .main-offer {
     color: green;
-    margin-top: -16px;
-    margin-left: 5%;
+    margin-left: 42px;
     font-size: 72%;
   }
 
@@ -280,6 +293,6 @@ main .main-texto {
     font-size: 62%;
     color: gray;
     padding: 2% 0% 2% 0%;
-    margin-left: 5%;
+    margin-left: 42px;
   }
 }
