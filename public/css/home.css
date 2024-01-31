@@ -1,6 +1,8 @@
 * {
   font-family: "Roboto", sans-serif;
   list-style-type: none;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -23,7 +25,7 @@ header .header-para-buscar {
 header .header-barrra-busqueda {
   background-color: white;
   width: 500px;
-  border: solid #666 3px;
+  border: solid #666 1px;
   text-align: center;
   margin-left: 14px;
   font-size: 3ex;
@@ -31,7 +33,7 @@ header .header-barrra-busqueda {
 header .header-busqueda-icon {
   /* margin-left: 3%; */
   background-color: white;
-  border: solid #666 3px;
+  border: solid #666 1px;
   font-size: 20px;
   text-align: center;
 }
@@ -98,6 +100,7 @@ main .main-texto {
 .footer-icon {
   font-size: 2em;
   color: #1259c3;
+  margin-top: 50px;
 }
 
 .footer-text {
@@ -108,25 +111,39 @@ main .main-texto {
   .header {
     width: 100%;
   }
+  .header .titulo-busqueda{
+    display: flex;
+}
+  .header .titulo-busqueda-anuncio{/* display: flex; */}
   header .titulo {
-    width: 150px;
+    width: 50%;
     padding: 0%;
     margin: 5% 0% 5% 5%;
     height: 0%;
   }
   header .header-para-buscar {
+  width: 50%;
+  margin-top: 10%;
+  text-align: center;
   }
   header .header-barrra-busqueda {
-    font-size: 13px;
-    border: solid #666 1px;
-    width: auto;
+    font-size: 10px;
+    border: solid #fdfdfd 1px;
     padding-right: 5px;
+    border-right: white solid;
+    padding: 4% 5% 4% 4%;
+    border-radius: 5px;
+    color: #9c9c9c;
+    margin-left: 0;
   }
   header .header-busqueda-icon {
     /* width: 20px; */
-    font-size: 13px;
-    border: solid #666 0.1px;
-    margin: auto;
+    font-size: 11px;
+    border: solid #fff 0.1px;
+    margin: -7%;
+    padding: 4% 2% 4% 0px;
+    border-radius: 4px;
+    color: #9c9c9c;
   }
   header .header-anuncio {
     font-size: 82%;
@@ -135,17 +152,22 @@ main .main-texto {
     padding: 10px;
     margin-bottom: 35px;
   }
+  .header .scroll-1{}
+
   header .scroll {
     font-size: 0%;
   }
   header .header-icon-barra {
-    padding: 10px 0% 10px 0%;
-    width: 65px;
+    /* padding: 10px 0% 10px 0%; */
+    width: 51px;
     box-sizing: border-box;
     margin: auto;
     display: block;
+    border-radius: 10px;
+    font-size: 24px;
   }
   .main {
+
   }
   main .home-banner-c {
     display: block;
@@ -157,7 +179,9 @@ main .main-texto {
 
   main .main-title {
     color: #767275;
+    padding: 10px 0px 10px 3%;
   }
+  .main .mostrar-productos{}
 
   main .products {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -171,22 +195,21 @@ main .main-texto {
   }
   main .emote-camion {
     color: #3fb349;
-    margin-left: 32px;
+    margin-left: 84%;
     border-radius: 50%;
     width: 22px;
     border: solid 1.6px;
-    padding: 4px 13px 13px 4px;
+    padding: 4px 17px 4px 4px;
   }
 
   main .main-precio {
-    margin-left: 5%;
+    margin-left: 20px;
   }
 
   main .main-offer {
     color: #3fb349;
-    margin-top: -16px;
-    margin-left: 5%;
-    font-size: 72%;
+    margin-left: 20px;
+    font-size: 11px;
   }
 
   main .main-texto {
@@ -197,33 +220,76 @@ main .main-texto {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1080px) {
+@media (min-width: 769px) and (max-width: 1024px) {
   .header {
+  padding-bottom: 2%;
   }
+  .header .titulo-busqueda{
+    display: flex;
+    flex-direction: row;
+    width: 68%;
+    margin-top: 37px;
+}
+  
+  .header .titulo-busqueda-anuncio{
+    display: flex;
+    padding-bottom: 55px;
+}
   header .titulo {
     margin: auto;
-    margin-left: 20px;
+    /* margin-left: 0px; */
     margin-bottom: 8px;
-    height: 100px;
+    height: 99px;
+    width: 46%;
+    padding-top: 25px;
+    padding: 0;
+    margin-right: 40px;
+    margin-left: 20px;
   }
+
+  .header .header-para-buscar{
+    /* display: flex; */
+    width: 172px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 45px;
+    width: 43%;
+}
+  
   header .header-barrra-busqueda {
-    margin-left: 26px;
-    padding-right: 30px;
-    font-size: 22px;
+    margin-left: -27px;
+    padding-right: 22px;
+    font-size: 16px;
   }
 
   header .header-busqueda-icon {
+  font-size: 16px;
   }
   header .header-anuncio {
-  box-sizing: border-box;
-  display: block;
-  font-size: 20px;
+    box-sizing: border-box;
+    display: block;
+    font-size: 12px;
+    width: 68%;
+    margin-top: 60px;
+    margin-right: 55px;
+    width: 100%;
+    text-align: left;
   }
+  .header .scroll-1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+  .header .scroll {
+    display: flex;
+}
   header .redirecciones-1 {
-  margin: 0px;
+  margin-left: 20px;
+  font-size: 13px;
   }
   header .redirecciones-2 {
-  margin: 0px;
+    margin-right: 25px;
+    font-size: 13px;
   }
 
   header .header-icon-barra {
@@ -234,6 +300,8 @@ main .main-texto {
     font-size: 0px;
   }
   .main {
+  font-size: 17px;
+  background-color: #ebebeb;
   }
   main .home-banner-c {
     display: block;
@@ -242,27 +310,42 @@ main .main-texto {
     max-width: 100%;
     height: auto;
   }
+  main .main-title{
+    margin-left: 3%;
+    color: #767275;
+    margin-top: 11px;
+}
 
   main .main-titulos {
   }
 
   main .products {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 43%;
+    margin-bottom: 12px;
+    margin-top: 3%;
+    padding-top: 20px;
+    background-color: white;
   }
+  main .mostrar-productos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
   main .article {
-    width: 68%;
+    width: 90%;
     margin: auto;
     display: block;
-    padding-top: 10px;
+    /* padding-top: 0px; */
   }
-  main .emote-camion{
+  main .emote-camion {
     color: #3fb349;
-    margin-left: 32px;
-    border-radius: 50%;
-    width: 22px;
+    margin-left: 86%;
+    border-radius: 48px;
+    width: 26px;
     border: solid 1.6px;
-    padding: 4px 13px 13px 4px;
+    padding: 6px 24px 6px 6px;
   }
 
   main .main-precio {
@@ -271,7 +354,149 @@ main .main-texto {
 
   main .main-offer {
     color: green;
-    margin-top: -16px;
+    margin-left: 5%;
+    font-size: 72%;
+  }
+
+  main .main-texto {
+    font-size: 62%;
+    color: gray;
+    padding: 2% 0% 2% 0%;
+    margin-left: 5%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+  padding-bottom: 2%;
+  }
+  .header .titulo-busqueda{
+    display: flex;
+    flex-direction: row;
+    width: 68%;
+    margin-top: 20px;
+}
+  .header .titulo-busqueda-anuncio{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+  header .titulo {
+    margin: auto;
+    /* margin-left: 0px; */
+    margin-bottom: 23px;
+    height: 102px;
+    width: 47%;
+    padding: initial;
+  }
+
+  .header .header-para-buscar{
+    /* display: flex; */
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 39px;
+    width: 41%;
+}
+  
+  header .header-barrra-busqueda {
+    margin-left: 0px;
+    padding-right: 30px;
+    font-size: 17px;
+  }
+
+  header .header-busqueda-icon {
+  font-size: 17px;
+  }
+  header .header-anuncio {
+    box-sizing: border-box;
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 22px;
+    text-align: left;
+  }
+  .header .scroll-1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+  .header .scroll {
+    display: flex;
+}
+  header .redirecciones-1 {
+  margin-left: 20px;
+  font-size: 13px;
+  }
+  header .redirecciones-2 {
+    margin-right: 25px;
+    font-size: 13px;
+  }
+
+  header .header-icon-barra {
+    width: 0px;
+    padding: 0px;
+    /* height: 0px; */
+    margin: auto;
+    font-size: 0px;
+  }
+  .main {
+  font-size: 17px;
+  background-color: #ebebeb;
+  }
+  main .home-banner-c {
+    display: block;
+  }
+  main .home-banner {
+    max-width: 100%;
+    height: auto;
+  }
+  main .main-title{
+    margin-left: 2%;
+    color: #767275;
+    margin-top: 11px;
+}
+
+  main .main-titulos {
+  }
+
+  main .products {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    width: 43%;
+    margin-bottom: 12px;
+    margin-top: 3%;
+    padding-top: 20px;
+    background-color: white;
+  }
+  main .mostrar-productos {
+    display: flex;
+    justify-content: space-around;
+}
+  main .mostrar-productos-pc {
+    display: flex;
+}
+
+  main .article {
+    width: 69%;
+    margin: auto;
+    display: block;
+    /* padding-top: 0px; */
+  }
+  main .emote-camion {
+    color: #3fb349;
+    margin-left: 76%;
+    border-radius: 48px;
+    width: 26px;
+    border: solid 1.6px;
+    padding: 6px 24px 6px 6px;
+  }
+
+  main .main-precio {
+    margin-left: 5%;
+  }
+
+  main .main-offer {
+    color: green;
     margin-left: 5%;
     font-size: 72%;
   }
