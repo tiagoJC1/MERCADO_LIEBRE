@@ -36,6 +36,7 @@ header .header-busqueda-icon {
   border: solid #666 1px;
   font-size: 20px;
   text-align: center;
+  background-color: solid rgba(255,0,0,0)  0.1px;
 }
 
 header .header-anuncio {
@@ -107,7 +108,7 @@ main .main-texto {
   margin-bottom: 6%;
 }
 
-@media (min-width: 361px) and (max-width: 768px) {
+@media (min-width: 361px) {
   .header {
     width: 100%;
   }
@@ -122,26 +123,27 @@ main .main-texto {
     height: 0%;
   }
   header .header-para-buscar {
-  width: 50%;
   margin-top: 10%;
   text-align: center;
+  margin-right: 14px;
+  width: 40%;
   }
   header .header-barrra-busqueda {
-    font-size: 10px;
+    font-size: 11px;
     border: solid #fdfdfd 1px;
-    padding-right: 5px;
     border-right: white solid;
-    padding: 4% 5% 4% 4%;
-    border-radius: 5px;
-    color: #9c9c9c;
-    margin-left: 0;
+    padding: 4% 8% 4% 0%;
+    border-radius: 8px;
+    color: #7595c5;
+    margin-left: -10px;
+    width: 101%;
   }
   header .header-busqueda-icon {
     /* width: 20px; */
-    font-size: 11px;
-    border: solid #fff 0.1px;
-    margin: -7%;
-    padding: 4% 2% 4% 0px;
+    font-size: 8px;
+    border: solid rgba(255,0,0,0)  0.1px;
+    margin: -15%;
+    padding: 1% 1% 1% 0px;
     border-radius: 4px;
     color: #9c9c9c;
   }
@@ -150,20 +152,20 @@ main .main-texto {
     margin: auto;
     display: block;
     padding: 10px;
-    margin-bottom: 35px;
+    margin-bottom: 23px;
   }
   .header .scroll-1{}
 
   header .scroll {
-    font-size: 0%;
+    display: none;
   }
   header .header-icon-barra {
     /* padding: 10px 0% 10px 0%; */
-    width: 51px;
+    width: 59px;
     box-sizing: border-box;
     margin: auto;
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
     font-size: 24px;
   }
   .main {
@@ -220,7 +222,7 @@ main .main-texto {
   }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) {
   .header {
   padding-bottom: 2%;
   }
@@ -228,12 +230,12 @@ main .main-texto {
     display: flex;
     flex-direction: row;
     width: 68%;
-    margin-top: 37px;
+    margin-top: 36px;
 }
   
   .header .titulo-busqueda-anuncio{
     display: flex;
-    padding-bottom: 55px;
+    padding-bottom: 33px;
 }
   header .titulo {
     margin: auto;
@@ -245,35 +247,37 @@ main .main-texto {
     padding: 0;
     margin-right: 40px;
     margin-left: 20px;
+    margin-top: -4px;
   }
 
   .header .header-para-buscar{
-    /* display: flex; */
     width: 172px;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 45px;
+    margin-top: 24px;
     width: 43%;
 }
   
   header .header-barrra-busqueda {
-    margin-left: -27px;
-    padding-right: 22px;
+    margin-left: -50px;
     font-size: 16px;
+    width: 104%;
+    padding: 5% 5% 5% 0%;
   }
 
   header .header-busqueda-icon {
-  font-size: 16px;
+  font-size: 15px;
+  padding: 5% 0% 5% 3%;
   }
   header .header-anuncio {
     box-sizing: border-box;
     display: block;
     font-size: 12px;
     width: 68%;
-    margin-top: 60px;
-    margin-right: 55px;
+    margin-top: 75px;
+    margin-right: 11px;
     width: 100%;
-    text-align: left;
+    text-align: end;
   }
   .header .scroll-1{
     display: flex;
@@ -293,9 +297,9 @@ main .main-texto {
   }
 
   header .header-icon-barra {
+    /* display: none; */
     width: 0px;
     padding: 0px;
-    /* height: 0px; */
     margin: auto;
     font-size: 0px;
   }
@@ -366,7 +370,7 @@ main .main-texto {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .header {
   padding-bottom: 2%;
   }
@@ -379,7 +383,7 @@ main .main-texto {
   .header .titulo-busqueda-anuncio{
     display: flex;
     flex-direction: row;
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
   header .titulo {
     margin: auto;
@@ -395,26 +399,31 @@ main .main-texto {
     flex-wrap: wrap;
     flex-direction: row;
     margin-top: 39px;
-    width: 41%;
+    /* width: 41%; */
 }
   
   header .header-barrra-busqueda {
-    margin-left: 0px;
-    padding-right: 30px;
-    font-size: 17px;
+    /* margin-left: 0px; */
+    /* padding-right: 24%; */
+    font-size: 18px;
+    width: 99%;
+    text-align: center;
+    /* border-radius: 15px; */
   }
 
   header .header-busqueda-icon {
   font-size: 17px;
+  border-radius: 20px;
+  background-color: rgba(255,0,0,0);
   }
   header .header-anuncio {
     box-sizing: border-box;
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 23%;
     margin-right: 22px;
-    text-align: left;
+    text-align: center;
   }
   .header .scroll-1{
     display: flex;
@@ -508,3 +517,4 @@ main .main-texto {
     margin-left: 5%;
   }
 }
+/* movil:  */
