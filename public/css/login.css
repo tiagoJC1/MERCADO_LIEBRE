@@ -5,10 +5,15 @@
     .boton{
     margin-top: 30px;
     width: 88%;
-    background-color: #0044aa;
+    background-color: #f6f8fa;
     color: #d1cde2;
     border-radius: 8px;
+    transition-duration: 1s;
 }
+.boton:hover {
+    background-color:#0022AA ;
+}
+
 }
 @media (min-width: 769px){}
 @media (min-width: 1024px){}
