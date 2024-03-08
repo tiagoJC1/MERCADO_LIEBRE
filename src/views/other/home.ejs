@@ -1,71 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include('../partials/head') %>
+<%- include('../partials/head',{vista: 'Inicio' }) %>
 
     <body>
         <%- include('../partials/header') %>
 
             <main class="main">
                 <nav class="home-banner-c">
-                    <img src="/img/img-home-banner.jpg" alt="" class="home-banner">
+                    <img src="/img/img-home-banner.jpg" alt="baner-imagen" class="home-banner">
                 </nav>
                 <h4 class="main-title">
                     <a>Basado en tu última visita</a>
                 </h4>
-                <div class="mostrar-productos-pc">
-                    <div class="mostrar-productos">
 
 
-                        <% productsInsale.forEach(p=> { %>
-                            <div class="products">
-
-                                <a href="/productos/detaille-producto/<%= p.id %>">
-                                    <img src="/img/img-cafetera-moulinex.jpg" alt="article" class="article">
-                                    <p class="emote-camion"><i class="fa-solid fa-truck"></i></p>
-                                    <p class="main-precio">
-                                        <%= p.price%>
-                                    </p>
-                                    <p class="main-offer">
-                                        <%= p.discount%>%
-                                    </p>
-                                    <p class="main-texto">
-                                        <%= p.name%>
-                                    </p>
-                                </a>
-                            </div>
-                            <% }) %>
-                                <div>
-                                    <h4 class="main-title">
-                                        <a>Ofertas</a>
-                                    </h4>
-
-
-
-                                    <!-- producto 5 -->
-                                    <% productsVisited.forEach(p=> { %>
-
-                                        <!-- producto 1 -->
-                                        <div class="products">
-                                            <img src="/img/img-cafetera-moulinex.jpg" alt="article" class="article">
-                                            <p class="emote-camion"><i class="fa-solid fa-truck"></i></p>
-                                            <p class="main-precio">
-                                                <%= p.price%>
-                                            </p>
-                                            <p class="main-offer">
-                                                <%= p.discount%>%
-                                            </p>
-                                            <p class="main-texto">
-                                                <%= p.name%>
-                                            </p>
-                                        </div>
-                                        <% }) %>
-                                </div>
-
-                    </div>
+                <div class="mostrar-productos">
+                    <% productsInsale.forEach(p=> { %>
+                        <div class="products">
+                            <a href="/productos/detalle/<%= p.id %>">
+                                <img src="/img/products/<%= p.image %>" alt="article" class="article">
+                                <p class="emote-camion"><i class="fa-solid fa-truck"></i></p>
+                                <p class="main-precio">
+                                    $<%=toThousand(p.price)%>
+                                </p>
+                                <p class="main-offer">
+                                    <%= p.discount%>%
+                                </p>
+                                <p class="main-texto">
+                                    <%= p.name%>
+                                </p>
+                            </a>
+                        </div>
+                        <% }) %>
                 </div>
+
+
+                <h4 class="main-title">
+                    <a>Ofertas</a>
+                </h4>
+
+                <div class="mostrar-productos">
+                    <% productsVisited.forEach(p=> { %>
+                        <div class="products">
+                            <a href="/productos/detalle/<%= p.id %>">
+                                <img src="/img/products/<%= p.image %>" alt="article" class="article">
+                                <p class="emote-camion"><i class="fa-solid fa-truck"></i></p>
+                                <p class="main-precio">
+                                    $<%=toThousand(p.price)%> 
+                                </p>
+                                <p class="main-offer">
+                                    <%= p.discount%>%
+                                </p>
+                                <p class="main-texto">
+                                    <%= p.name%>
+                                </p>
+                            </a>
+                        </div>
+                        <% }) %>
+                </div>
+
+
+
             </main>
             <%- include('../partials/footer') %>
+                <%- include('../partials/scrips') %>
+
 
 
     </body>

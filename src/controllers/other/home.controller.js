@@ -5,8 +5,13 @@ module.exports = (req, res) => {
 
     const products = loadData()
 
-    const productsInsale = products.filter(p  => p.category  === "in-sale")
-    const productsVisited = products.filter(p  => p.category  === "visited")
+    const productsInsale = products.filter(p => p.category === "in-sale")
+    const productsVisited = products.filter(p => p.category === "visited")
 
-    res.render('other/home', {productsInsale, productsVisited});
+    res.render('other/home',
+        {
+            productsInsale,
+            productsVisited,
+            toThousand
+        });
 }

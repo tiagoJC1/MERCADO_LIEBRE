@@ -3,7 +3,7 @@
 }
 
 .footer-icon {
-  font-size: 2em;
+  font-size: 20px;
   color: #1259c3;
   margin-top: 50px;
   transition-duration: 1s;
@@ -12,6 +12,23 @@
   color: #002153;
 }
 
+footer p{
+  font-size: 13px;
+  padding: 0px 30px 0px 30px;
+}
+footer a{
+  font-size: 20px;
+}
+.fa-credit-card{
+  font-size: 25px;
+}
+.fa-gift{
+  font-size: 25px;
+}
+.fa-user-shield{
+  font-size: 25px;
+  
+}
 .footer-text {
   margin-bottom: 6%;
 }

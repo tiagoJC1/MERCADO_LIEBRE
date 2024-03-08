@@ -5,12 +5,15 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const methodOverride =  require('method-override'); // Pasar poder usar los métodos PUT y DELETE
+const multer = require('multer')
+const upload = multer();
 const port = 3000;
 
 // ************ express() - (don't touch) ************
 const app = express();
 
 // ************ Middlewares - (don't touch) ************
+app.use(upload.none())
 app.use(express.static(path.join(__dirname, '../public')));  // Necesario para los archivos estáticos en el folder /public
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
@@ -29,12 +32,12 @@ app.set('views', path.join(__dirname, 'src/views')); // Define la ubicación de 
 const otherRouter = require('./src/routes/other.routes'); 
 const productosRouter = require('./src/routes/products.routes');
 const adminRoutes = require('./src/routes/admin.routes');
-
+// const cartRoutes = require('./src/routes/cart.routes')
 
 app.use('/', otherRouter);
 app.use('/productos', productosRouter);
 app.use('/admin', adminRoutes)
-
+// app.use('/cart', cartRoutes )
 
 // ************ DON'T TOUCH FROM HERE ************
 // ************ catch 404 and forward to error handler ************
@@ -52,4 +55,5 @@ module.exports = app;
 app.listen(port, () => console.log(`http://localhost:${port}`));
 
 
-// 1:01:27
+// 2:00:50
+// 17:49

@@ -32,7 +32,6 @@ header .header-busqueda-icon {
   border: solid #666 1px;
   font-size: 20px;
   text-align: center;
-  background-color: solid rgba(255, 0, 0, 0) 0.1px;
 }
 
 header .header-anuncio {
@@ -44,9 +43,24 @@ header .header-anuncio {
 
 header .redirecciones-1 {
 }
-header .redirecciones-2 {
+header .redirecciones-1 .texto {
+  color: rgb(29, 27, 27);
+  /* font-size: 20px; */
 }
-
+header .redirecciones-2 .texto  {
+  color: rgb(29, 27, 27);
+  margin-right: 5px;
+}
+/* recordatorio de que quiero decorar el texto */
+header .redirecciones-1  :hover {
+  color: black;
+  transition: 10s;
+}
+header .redirecciones-2  :hover {
+  color: black;
+  transition: 10s;
+}
+/*  */
 header .header-icon-barra {
   background-color: #1259c3;
   color: white;
@@ -74,26 +88,35 @@ header .header-para-buscar {
   width: 40%;
 }
 header .header-barrra-busqueda {
-  font-size: 11px;
+  font-size: 12px;
   border: solid #fdfdfd 1px;
   border-right: white solid;
-  padding: 4% 8% 4% 0%;
+  padding: 4% 15% 4% 5%;
   border-radius: 8px;
-  color: #7595c5;
+  color: #6e88b1;
   margin-left: -10px;
   width: 101%;
+  text-align: left;
 }
 header .header-busqueda-icon {
   /* width: 20px; */
-  font-size: 8px;
-  border: solid rgba(255, 0, 0, 0) 0.1px;
+  font-size: 13px;
+  border: solid rgb(255 255 255 / 0%) 0.1px;
   margin: -15%;
   padding: 1% 1% 1% 0px;
   border-radius: 4px;
   color: #9c9c9c;
+  background-color: transparent;
+}
+
+header .header-busqueda-icon :hover {
+  color: black;
+  transition: 0.5s;
+}
+header .fa-magnifying-glass {
 }
 header .header-anuncio {
-  font-size: 82%;
+  /* font-size: 82%; */
   margin: auto;
   display: block;
   padding: 10px;
@@ -131,6 +154,7 @@ header .header-icon-barra {
     /* align-items: center; */
     padding-top: 20px;
     padding-bottom: 15px;
+    justify-content: space-around;
   }
   header .titulo {
     margin: auto;
@@ -160,8 +184,9 @@ header .header-icon-barra {
 
   header .header-busqueda-icon {
     font-size: 15px;
-    padding: 3% 3% 3% 3%;
+    padding: 3% 5% 3% 3%;
     border-radius: 20px;
+    content: 20px;
   }
   header .header-anuncio {
     box-sizing: border-box;
@@ -199,7 +224,7 @@ header .header-icon-barra {
   }
 
   header .header-icon-barra {
-    /* display: none; */
+    display: none;
     width: 0px;
     padding: 0px;
     margin: auto;
@@ -249,14 +274,15 @@ header .header-icon-barra {
     /* padding-right: 24%; */
     font-size: 18px;
     width: 93%;
-    text-align: center;
+    text-align: left;
     /* border-radius: 15px; */
+    padding: 12px 60px 12px 10px;
   }
 
   header .header-busqueda-icon {
     font-size: 17px;
     border-radius: 20px;
-    background-color: rgb(255 255 255);
+    background-color: rgb(255 255 255 / 0%);
   }
   header .header-anuncio {
     box-sizing: border-box;
@@ -275,6 +301,8 @@ header .header-icon-barra {
   }
   .header .scroll {
     display: flex;
+    color: black;
+    /* font-size: 17px; */
   }
   header .redirecciones-1 {
     margin-left: 20px;
@@ -291,5 +319,6 @@ header .header-icon-barra {
     /* height: 0px; */
     margin: auto;
     font-size: 0px;
+    display: none;
   }
 }
